@@ -19,7 +19,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-        make: lint
+      - shell: bash
+        run: make lint
       - uses: actions/checkout@v2
 
       - name: Hexlet project check
